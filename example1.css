@@ -28,12 +28,13 @@ Header{
         background-color: #000000;
         color: #ffffff;
         padding: 1em;
-    
+        display: table; 
+        width: 100%;
     }
 
     aside{
         background-color: #fffafa;
-        color: #803b3b;
+        color: #f00c0c;
         padding: 1em;
         border: 1px solid #0071f3;
         display: table-cell;
@@ -44,11 +45,11 @@ Header{
 
     section{
         background-color: #fffafa;
-        color: #803b3b;
+        color: #e40a0a;
         padding: 1em;
         border: 1px solid #0071f3;
         display: table-cell;
-        Width: 10%;
+        Width: 80%;
     
     }
 
