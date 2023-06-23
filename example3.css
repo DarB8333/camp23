@@ -1,0 +1,22 @@
+.container{
+   
+    color: #000000;
+    padding: 2em;   
+}
+.bg-1{
+    background-color: #090085;
+
+}
+.text-center{
+    text-align: center;
+}
+.inline-block{
+    display: inline-block;
+    width: 20%;
+    margin: 0.3em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    background-color: #090085;
+    color: #ffffff;
+    text-align: center;
+}
