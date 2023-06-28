@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="my-text.css">
     <link rel="stylesheet" type="text/css" href="my-background.css">
     <link rel="stylesheet" type="text/css" href="my-shadow.css">
+    <link rel="stylesheet" type="text/css" href="my-navigation.css">
+    <link rel="stylesheet" type="text/css" href="my-widthHeight.css">
 </head>
 <body>
     <header class="container-fluid text-center bg-1 pb-2 text-center text-uppercase">
@@ -19,19 +21,22 @@
         <p class="fs-5 fw-lighter text-capitalize">ASU NASA STEM Summer Camp</p>
         <p>June 5- July 14, 2023</p>
     </header>
-    <nav class="container-fluid bg-1 border border-bottom border-success bg-success shadow-sm">
-        <div class="inline-block">Menu1</div>
-        <div class="inline-block">Menu2</div>
-        <div class="inline-block">Menu3</div>
+    <nav id="myTab" class="container-fluid bg-1 border border-bottom border-success bg-success shadow-sm nav nav-tabs">
+        <div data-bs-target="#home" class="inline-block nav-link">Menu1</div>
+        <div data-bs-target="#profile" class="inline-block nav-link">Menu2</div>
+        <div data-bs-target="#messages" class="inline-block nav-link">Menu3</div>
     </nav>
-    <main class="container row bg-success mt-5">
-        <aside class="col col-2 border border-light rounded-3 me-3">
+
+    <div id="myTabContent" class="tab-content">
+
+    <main id="home"    class="container row bg-success mt-5 tab-pane">
+        <aside class="col col-2 border border-light rounded-3 me-3 w-25vw">
             <h2>Aside</h2>
             <p>This is a paragraph of text.</p>
             <p>This is a paragraph of text.</p>
             <p>This is a paragraph of text.</p>
         </aside>
-        <section class="col col-4 border border-light rounded-3">
+        <section class="col col-4 border border-light rounded-3 w-25vw">
             <h2>Section 1</h2>
             <p>This is a paragraph of text.</p>
             <p>This is a paragraph of text.</p>
@@ -50,19 +55,35 @@
             </div>
 
         </section>
-        <section class = "col col-3 border border-light rounded-3">
+        <section class = "col col-3 border border-light rounded-3 w-25vw">
             <h2>Section 2</h2>
             <p>This is a paragraph of text.</p>
             <p>This is a paragraph of text.</p>
             <p>This is a paragraph of text.</p>
         </section class = "col col-2">
-        <section class = "col border border-light rounded-3">
+        <section class = "col border border-light rounded-3 w-25vw">
             <h2>Section 3</h2>
             <p>This is a paragraph of text.</p>
             <p>This is a paragraph of text.</p>
             <p>This is a paragraph of text.</p>
         </section>
     </main>
+    <main id="profile" class="container row tab-pane active">
+        This is for menu 2
+    </main>
+    <main id="messages" class="container row tab-pane">
+        This is for menu 3
+    </main>
+
+    <script src="./navigation.js"></script>
+    <script>   
+      //alert(TabList.length); 
+      let myTab = "#myTab div";
+      let myTabContent = "#myTabContent > main";
+
+    setupTabs(myTab, myTabContent);
+    </script>
+</div>
     <footer class="bg-success text-center fw-lighter">
         <p>ASU NASA STEM Summer Camp</p>
         <p>June 5- July 14, 2023</p>

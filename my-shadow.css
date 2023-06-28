@@ -2,7 +2,7 @@
     box-shadow: 0 0.5rem 1rem rgb(162, 4, 253) !important;
 }
 .shadow-sm {
-    box-shadow: 0 0.125rem 0.25rem rgb(250, 246, 3) !important;
+    box-shadow: 0 0.125rem 0.25rem rgb(3, 192, 250) !important;
 }
 .shadow-lg {
     box-shadow: 0 1rem 3rem rgb(80, 253, 0) !important;
