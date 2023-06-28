@@ -9,19 +9,22 @@
     <link rel="stylesheet" type="text/css" href="my-corner.css">
     <link rel="stylesheet" type="text/css" href="my-margin.css">
     <link rel="stylesheet" type="text/css" href="my-padding.css">
+    <link rel="stylesheet" type="text/css" href="my-text.css">
+    <link rel="stylesheet" type="text/css" href="my-background.css">
+    <link rel="stylesheet" type="text/css" href="my-shadow.css">
 </head>
 <body>
-    <header class="container-fluid text-center bg-1 border pt-4 pb-2">
+    <header class="container-fluid text-center bg-1 pb-2 text-center text-uppercase">
         <h1>My Simple Webpage</h1>
-        <p>ASU NASA STEM Summer Camp</p>
+        <p class="fs-5 fw-lighter text-capitalize">ASU NASA STEM Summer Camp</p>
         <p>June 5- July 14, 2023</p>
     </header>
-    <nav class="container-fluid bg-1 border border-bottom border-success">
+    <nav class="container-fluid bg-1 border border-bottom border-success bg-success shadow-sm">
         <div class="inline-block">Menu1</div>
         <div class="inline-block">Menu2</div>
         <div class="inline-block">Menu3</div>
     </nav>
-    <main class="container row">
+    <main class="container row bg-success mt-5">
         <aside class="col col-2 border border-light rounded-3 me-3">
             <h2>Aside</h2>
             <p>This is a paragraph of text.</p>
@@ -60,7 +63,7 @@
             <p>This is a paragraph of text.</p>
         </section>
     </main>
-    <footer>
+    <footer class="bg-success text-center fw-lighter">
         <p>ASU NASA STEM Summer Camp</p>
         <p>June 5- July 14, 2023</p>
     </footer>
