@@ -1,0 +1,13 @@
+.float-start{
+    float: left !important;
+}
+.float-end{
+    float: right !important;
+}
+
+.float-none{
+    float: none !important;
+}
+.float-center{
+    float: center !important;
+}
