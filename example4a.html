@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Simple Webpage</title>
+    <link rel="stylesheet" type="text/css" href="my-typography.css">
+    <link rel="stylesheet" type="text/css" href="my-container.css">
+    <link rel="stylesheet" type="text/css" href="my-rowColumn.css">
+    <link rel="stylesheet" type="text/css" href="my-border.css">
+    <link rel="stylesheet" type="text/css" href="my-corner.css">
+    <link rel="stylesheet" type="text/css" href="my-margin.css">
+    <link rel="stylesheet" type="text/css" href="my-padding.css">
+    <link rel="stylesheet" type="text/css" href="my-text.css">
+    <link rel="stylesheet" type="text/css" href="my-background.css">
+    <link rel="stylesheet" type="text/css" href="my-shadow.css">
+    <link rel="stylesheet" type="text/css" href="my-navigation.css">
+    <link rel="stylesheet" type="text/css" href="my-widthHeight.css">
+    <link rel="stylesheet" type="text/css" href="my-utility.css">
+</head>
+<body>
+    <header class="container-fluid text-center bg-1 pb-2 text-center text-uppercase">
+        <h1>My Simple Webpage</h1>
+        <p class="fs-5 fw-lighter text-capitalize">ASU NASA STEM Summer Camp</p>
+        <p>June 5- July 14, 2023</p>
+    </header>
+    <nav id="myTab" class="container-fluid bg-1 border border-bottom border-success bg-success shadow-sm nav nav-tabs">
+        <div data-bs-target="#home" class="inline-block nav-link">Menu1</div>
+        <div data-bs-target="#profile" class="inline-block nav-link">Menu2</div>
+        <div data-bs-target="#messages" class="inline-block nav-link">Menu3</div>
+    </nav>
+
+    <div id="myTabContent" class="tab-content">
+
+    <main id="home"    class="container-fluid bg-success mt-5 tab-pane active w-100">
+        <div class="row">
+            <aside class="col col-3 border border-light rounded-3">
+            <h2>Aside</h2>
+            <p>This is a paragraph of text.</p>
+            <p>This is a paragraph of text.</p>
+            <p>This is a paragraph of text.</p>
+            </aside>
+            <section class="col col-4 border border-light rounded-3">
+            <h2>Section 1</h2>
+            <p>This is a paragraph of text.</p>
+            <p>This is a paragraph of text.</p>
+            <p>This is a paragraph of text.</p>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+
+            <div>
+                <h3>Subsection 1</h3>
+                <p>This is a paragraph of text.</p>
+                <p>This is a paragraph of text.</p>
+                <p>This is a paragraph of text.</p>
+            </div>
+
+            </section>
+            <section class = "col col-4 border border-light rounded-3">
+                <h2>Section 2</h2>
+                <p>This is a paragraph of text.</p>
+                <p>This is a paragraph of text.</p>
+                <p>This is a paragraph of text.</p>
+            </section>
+            <section class = "col col-1 border border-light rounded-3 text-wrap text-break">
+            <h2>Section 3</h2>
+            <p>This is a paragraph of text.</p>
+            <p>This is a paragraph of text.</p>
+            <p>This is a paragraph of text.</p>
+            </section>
+        </div>
+    </main>
+    <main id="profile" class="container-fluid tab-pane">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-5 border border-light rounded-3"> 
+                    <img src="./Picture1.jpg.jpeg" class="w-100 h-70" alt="Placeholder Image">
+                </div>
+                <div class="col col-7 border border-light rounded-3">
+                </div>    
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <img src="./Picture1.jpg.jpeg" class="w-40 float-start rounded-3" alt="Placeholder Image">
+            <p>This is the image of the google brain. This is the image of the google brain.
+                This is the image of the google brain. This is the image of the google brain.
+                This is the image of the google brain. This is the image of the google brain.
+                This is the image of the google brain. This is the image of the google brain.
+                This is the image of the google brain. This is the image of the google brain.
+                This is the image of the google brain. This is the image of the google brain.
+                This is the image of the google brain. This is the image of the google brain.
+                This is the image of the google brain. This is the image of the google brain.
+
+            </p>
+        </div>
+        <div class="container-fluid">
+            <img src="./Picture1.jpg.jpeg" class="w-40 float-center shadow-lg rounded-3" alt="Placeholder Image">
+            <p>This is the image of the google brain. This is the image of the google brain.
+                This is the image of the google brain. This is the image of the google brain.
+                This is the image of the google brain. This is the image of the google brain.
+                This is the image of the google brain. This is the image of the google brain.
+                This is the image of the google brain. This is the image of the google brain.
+                This is the image of the google brain. This is the image of the google brain.
+                This is the image of the google brain. This is the image of the google brain.
+                This is the image of the google brain. This is the image of the google brain.
+
+            </p>
+        </div>
+    </main>
+    <main id="messages" class="container tab-pane">
+            <div class="row">
+                <div class="col col-6 border border-light rounded-3"> 
+                    <img src="./Picture1.jpg.jpeg" class="w-100 h-70" alt="Placeholder Image">
+                </div>
+                <div class="col col-6 bg-light">
+                </div>    
+            </div>
+    </main>
+
+    <script src="./navigation.js"></script>
+    <script>   
+      //alert(TabList.length); 
+      let myTab = "#myTab div";
+      let myTabContent = "#myTabContent > main";
+
+    setupTabs(myTab, myTabContent);
+    </script>
+</div>
+    <footer class="bg-success text-center fw-lighter">
+        <p>ASU NASA STEM Summer Camp</p>
+        <p>June 5- July 14, 2023</p>
+    </footer>
+</html>
