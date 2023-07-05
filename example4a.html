@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="my-navigation.css">
     <link rel="stylesheet" type="text/css" href="my-widthHeight.css">
     <link rel="stylesheet" type="text/css" href="my-utility.css">
+    <link rel="stylesheet" type="text/css" href="my-cards.css">
+    <link rel="stylesheet" type="text/css" href="my-position.css">
 </head>
 <body>
     <header class="container-fluid text-center bg-1 pb-2 text-center text-uppercase">
@@ -71,19 +73,42 @@
             </section>
         </div>
     </main>
-    <main id="profile" class="container-fluid tab-pane">
+    <main id="profile" class="container-fluid tab-pane overflow-auto">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col col-5 border border-light rounded-3"> 
-                    <img src="./Picture1.jpg.jpeg" class="w-100 h-70" alt="Placeholder Image">
+            <div class="card w-100">
+                <div class="row">
+                    <div class="col col-5 border border-light rounded-3"> 
+                        <img src="./Picture1.jpg.jpeg" class="w-100 h-100" alt="Placeholder Image">
+                    </div>
+                    <div class="col col-7 border border-light rounded-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Google Brain</h5>
+                            <p>Price: $120</p>
+                            <p>This is the Google brain which was started in 2018.
+                                Now, it is combined with the Google AI.
+                                This is the Google brain which was started in 2018.
+                                Now, it is combined with the Google AI.
+                                This is the Google brain which was started in 2018.
+                                Now, it is combined with the Google AI.
+                                This is the Google brain which was started in 2018.
+                            </p>
+                        </div>
+                    </div>    
                 </div>
-                <div class="col col-7 border border-light rounded-3">
-                </div>    
             </div>
         </div>
 
         <div class="container-fluid">
-            <img src="./Picture1.jpg.jpeg" class="w-40 float-start rounded-3" alt="Placeholder Image">
+            <div class="card w-25 float-start">
+                <img src="./Picture1.jpg.jpeg" class="card-img-top float-start rounded-3 w-100" alt="Placeholder Image">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                    <li>Price: $120</li>
+                    <li>Name: Google Brain</li>
+                    </ul>
+                    
+                </div>
+            </div>
             <p>This is the image of the google brain. This is the image of the google brain.
                 This is the image of the google brain. This is the image of the google brain.
                 This is the image of the google brain. This is the image of the google brain.
@@ -96,7 +121,14 @@
             </p>
         </div>
         <div class="container-fluid">
-            <img src="./Picture1.jpg.jpeg" class="w-40 float-center shadow-lg rounded-3" alt="Placeholder Image">
+            <div class="card w-25 float-end">
+                <div class="card-body w-100">
+                    <h5 class="card-title">Google Brain</h5>
+                    <p>Price: $120</p>
+                    <p>Expiration: July 2035</p>
+                </div>
+                <img src="./Picture1.jpg.jpeg" class="card-image-bottom w-100 float-end shadow-lg rounded-3" alt="Placeholder Image">
+            </div>
             <p>This is the image of the google brain. This is the image of the google brain.
                 This is the image of the google brain. This is the image of the google brain.
                 This is the image of the google brain. This is the image of the google brain.
@@ -112,7 +144,17 @@
     <main id="messages" class="container tab-pane">
             <div class="row">
                 <div class="col col-6 border border-light rounded-3"> 
-                    <img src="./Picture1.jpg.jpeg" class="w-100 h-70" alt="Placeholder Image">
+                    <div class="card border-success w-100">
+                        <div class="card-header bg-transparent border-success">
+                            Google Brain
+                        </div>
+                        <div class="card-bdy text-success">
+                            <img src="./Picture1.jpg.jpeg" class="w-100 h-70" alt="Placeholder Image">
+                        </div>
+                        <div class="card-footer bg-transparent border-success text-center">
+                           <p>Price:$120</p>
+                           <p>Expiration: July 2035</p>
+                    </div>
                 </div>
                 <div class="col col-6 bg-light">
                 </div>    
