@@ -103,3 +103,6 @@
 .ms-auto {
     margin-left: auto !important;
 }
+.mt--5 {
+    margin-top: -5rem !important;
+}

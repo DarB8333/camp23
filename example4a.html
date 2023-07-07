@@ -38,41 +38,32 @@
     <main id="home"    class="container-fluid bg-success mt-5 tab-pane active w-100">
         <div class="row">
             <aside class="col col-3 border border-light rounded-3">
-            <h2>Aside</h2>
-            <p>This is a paragraph of text.</p>
-            <p>This is a paragraph of text.</p>
-            <p>This is a paragraph of text.</p>
+                <h2>Page 1</h2>
+                <p>This is a paragraph of text.</p>
+                <p>This is a paragraph of text.</p>
+                <p>This is a paragraph of text.</p>
             </aside>
-            <section class="col col-4 border border-light rounded-3">
-            <h2>Section 1</h2>
-            <p>This is a paragraph of text.</p>
-            <p>This is a paragraph of text.</p>
-            <p>This is a paragraph of text.</p>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
+            <section class="col col-9 border border-light rounded-3">
+                <div class="tab-content position-relative w-50 " id="slideShow1">
+                    <div class="tab-pane w-100 h-20vw active ">
+                        <div class="position-absolute top-0 text-light fs-6">1 / 3</div>
+                        <img src="./Picture1.jpg.jpeg" class="w-100 h-100"  alt="Placeholder Image">
+                        <div class="position-absolute bottom-0 text-light fs-6">Google Brain</div>
+                    </div>
+                    <div class="tab-pane w-100 h-2 0vw">
+                        <div class="position-absolute top-0 text-light fs-6">2 / 3</div>
+                        <img src="./picture2.jpg" class="w-100 h-100"  alt="Placeholder Image">
+                        <div class="position-absolute bottom-0 text-light fs-6">Cats</div>
+                    </div>
+                    <div class="tab-pane w-100 h-20vw">
+                        <div class="position-absolute top-0 text-light fs-6">3 / 3</div>
+                        <img src="./Picture3.jpg" class="w-100 h-100" alt="Placeholder Image">
+                        <div class="position-absolute bottom-0 text-light fs-6">Cats</div>
+                    </div> 
+                      <a class="position-absolute cursor-pointer top-50 mt--5 p-3 w-auto text-light fs-1 rounded-2 user-select-none prev-1">&#10094;</a>
+                      <a class="position-absolute cursor-pointer top-50 mt--5 p-3 w-auto text-light fs-1 rounded-2 user-select-none end-1rem next-1">&#10095;</a>       
 
-            <div>
-                <h3>Subsection 1</h3>
-                <p>This is a paragraph of text.</p>
-                <p>This is a paragraph of text.</p>
-                <p>This is a paragraph of text.</p>
-            </div>
-
-            </section>
-            <section class = "col col-4 border border-light rounded-3">
-                <h2>Section 2</h2>
-                <p>This is a paragraph of text.</p>
-                <p>This is a paragraph of text.</p>
-                <p>This is a paragraph of text.</p>
-            </section>
-            <section class = "col col-1 border border-light rounded-3 text-wrap text-break">
-            <h2>Section 3</h2>
-            <p>This is a paragraph of text.</p>
-            <p>This is a paragraph of text.</p>
-            <p>This is a paragraph of text.</p>
+                </div>
             </section>
         </div>
     </main>
@@ -148,7 +139,7 @@
             <div class="row">
                 <div class="col col-6 border border-light rounded-3"> 
                     <div class="card border-success w-100">
-                        <div class="card-header bg-transparent border-success">
+                        <div class="card-header bg-transparent border-success text-center">
                             Google Brain
                         </div>
                         <div class="card-bdy text-success">
@@ -200,14 +191,14 @@
         /************************
         * manual carousel
          * ***********************/
-        /*
+        
         let myTab1        = "#slideShow1 > div";
         let myTabContent1 = "#slideShowDot1 > span";
         let myTabArrow1   = "#slideShow1 > a";  
     
         setupListenerDot(myTab1, myTabContent1, myTabArrow1);
         setupListenerArrow(myTab1, myTabContent1, myTabArrow1);
-        */
+        
     
     
         /**************************************
