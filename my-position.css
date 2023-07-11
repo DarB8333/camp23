@@ -59,6 +59,10 @@
   .start-50 {
     left: 50% !important;
   }
+
+  .start-25 {
+    left: 25% !important;
+  }
   
   .start-100 {
     left: 100% !important;
